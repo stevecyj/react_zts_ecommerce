@@ -1,3 +1,4 @@
+import HelloButton from '@/components/HelloButton'
 import { Layout } from '@douyinfe/semi-ui';
 
 const MarketplaceLayout = () => {
@@ -10,6 +11,7 @@ const MarketplaceLayout = () => {
         <Content>
           Content
           <div>this is MarketplacePage</div>
+          <HelloButton></HelloButton>
         </Content>
       </Layout>
       <Footer>Footer</Footer>
