@@ -27,6 +27,7 @@ const SearchInput = () => {
         data={stringData}
         value={value}
         showClear
+        size="large"
         prefix={<IconSearch />}
         placeholder="搜索... "
         onSearch={handleStringSearch}
