@@ -7,7 +7,10 @@ const MarketplaceLayout = () => {
       <Header>Header</Header>
       <Layout>
         <Sider>Sider</Sider>
-        <Content>Content</Content>
+        <Content>
+          Content
+          <div>this is MarketplacePage</div>
+        </Content>
       </Layout>
       <Footer>Footer</Footer>
     </Layout>

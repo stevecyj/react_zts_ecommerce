@@ -1,12 +1,12 @@
-import MarketplaceLayout from '../../layouts/MarketplaceLayout';
+import MarketplaceLayout from '@/layouts/MarketplaceLayout';
 
 const MarketplacePage = () => {
-  return(
-  <>
-    <MarketplaceLayout></MarketplaceLayout>
-    <div>this is MarketplacePage</div>;
-  </>
-  )
+  return (
+    <>
+      <MarketplaceLayout>
+      </MarketplaceLayout>
+    </>
+  );
 };
 
 export default MarketplacePage;
