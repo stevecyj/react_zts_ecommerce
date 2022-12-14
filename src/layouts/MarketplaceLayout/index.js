@@ -1,13 +1,13 @@
 import { Layout } from '@douyinfe/semi-ui';
-import HelloButton from '@/components/HelloButton'
+import HelloButton from '@/components/HelloButton';
 import AppNav from '@components/Navigate';
 
 const MarketplaceLayout = () => {
   const { Header, Footer, Sider, Content } = Layout;
   return (
-    <Layout className='components-layout-demo'>
+    <Layout className="components-layout-demo">
       <Header>
-      <AppNav></AppNav>
+        <AppNav></AppNav>
       </Header>
       <Layout>
         <Sider>Sider</Sider>
