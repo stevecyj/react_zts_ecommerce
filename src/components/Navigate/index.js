@@ -1,12 +1,11 @@
-import { Nav, Avatar, Dropdown } from '@douyinfe/semi-ui';
+import { Nav, Avatar, Dropdown, Icon } from '@douyinfe/semi-ui';
 import {
   IconStar,
   IconUser,
-  IconUserGroup,
   IconSetting,
   IconEdit,
-  IconSemiLogo,
 } from '@douyinfe/semi-icons';
+import OIcon from '@/assets/images/o-svg.js';
 
 const AppNav = () => {
   return (
@@ -38,7 +37,7 @@ const AppNav = () => {
         ]}
         onSelect={(key) => console.log(key)}
         header={{
-          logo: <IconSemiLogo style={{ height: '36px', fontSize: 36 }} />,
+          logo: <Icon svg={<OIcon />} />,
           text: 'Semi 运营后台',
         }}
         footer={
