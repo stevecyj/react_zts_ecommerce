@@ -38,7 +38,7 @@ const AppNav = () => {
         onSelect={(key) => console.log(key)}
         header={{
           logo: <Icon svg={<OIcon />} />,
-          text: 'Semi 运营后台',
+          text: 'otpyrc',
         }}
         footer={
           <Dropdown
