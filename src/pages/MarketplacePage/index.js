@@ -1,12 +1,3 @@
-import MarketplaceLayout from '@/layouts/MarketplaceLayout';
-
-const MarketplacePage = () => {
-  return (
-    <>
-      <MarketplaceLayout>
-      </MarketplaceLayout>
-    </>
-  );
-};
+import MarketplacePage from './MarketplacePage';
 
 export default MarketplacePage;

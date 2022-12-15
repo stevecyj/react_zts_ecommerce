@@ -6,7 +6,7 @@ import {
   IconEdit,
 } from '@douyinfe/semi-icons';
 import OIcon from '@/assets/images/o-svg.js';
-import SearchInput from '../Input/Search';
+import SearchInput from '@/components/Input/Search';
 
 const AppNav = () => {
   return (
