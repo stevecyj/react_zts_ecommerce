@@ -28,9 +28,9 @@ const SearchInput = () => {
         data={stringData}
         value={value}
         showClear
-        size='large'
+        size="large"
         prefix={<IconSearch />}
-        placeholder='搜索... '
+        placeholder="搜索... "
         onSearch={handleStringSearch}
         onChange={handleChange}
         style={{ width: 200, marginRight: 50 }}

@@ -6,8 +6,8 @@ import {
   IconEdit,
 } from '@douyinfe/semi-icons';
 import OIcon from '@/assets/images/o-svg.js';
-import SearchInput from '@/components/Input/Search';
-import SwitchModeButton from '../../Buttons/SwitchModeButton';
+import SearchInput from '@/components/Navigate/SearchInput';
+import SwitchModeButton from '@/components/Navigate/SwitchModeButton';
 
 const AppNav = () => {
   return (
@@ -39,7 +39,12 @@ const AppNav = () => {
         ]}
         onSelect={(key) => console.log(key)}
         header={{
-          logo: <Icon style={{ color: 'var(--semi-color-text-2)'  }} svg={<OIcon />} />,
+          logo: (
+            <Icon
+              style={{ color: 'var(--semi-color-text-2)' }}
+              svg={<OIcon />}
+            />
+          ),
           text: 'otpyrc',
         }}
         footer={
@@ -47,7 +52,7 @@ const AppNav = () => {
             <SearchInput></SearchInput>
             <SwitchModeButton></SwitchModeButton>
             <Dropdown
-              position='bottomRight'
+              position="bottomRight"
               render={
                 <Dropdown.Menu>
                   <Dropdown.Item>详情</Dropdown.Item>
@@ -55,7 +60,7 @@ const AppNav = () => {
                 </Dropdown.Menu>
               }
             >
-              <Avatar size='small' color='light-blue' style={{ margin: 4 }}>
+              <Avatar size="small" color="light-blue" style={{ margin: 4 }}>
                 BD
               </Avatar>
               <span>Bytedancer</span>
