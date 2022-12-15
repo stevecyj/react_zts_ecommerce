@@ -38,26 +38,27 @@ const AppNav = () => {
         ]}
         onSelect={(key) => console.log(key)}
         header={{
-          style: { marginRight: '48vw' },
           logo: <Icon svg={<OIcon />} />,
           text: 'otpyrc',
-          children: <SearchInput></SearchInput>,
         }}
         footer={
-          <Dropdown
-            position="bottomRight"
-            render={
-              <Dropdown.Menu>
-                <Dropdown.Item>详情</Dropdown.Item>
-                <Dropdown.Item>退出</Dropdown.Item>
-              </Dropdown.Menu>
-            }
-          >
-            <Avatar size="small" color="light-blue" style={{ margin: 4 }}>
-              BD
-            </Avatar>
-            <span>Bytedancer</span>
-          </Dropdown>
+          <>
+            <SearchInput></SearchInput>
+            <Dropdown
+              position='bottomRight'
+              render={
+                <Dropdown.Menu>
+                  <Dropdown.Item>详情</Dropdown.Item>
+                  <Dropdown.Item>退出</Dropdown.Item>
+                </Dropdown.Menu>
+              }
+            >
+              <Avatar size='small' color='light-blue' style={{ margin: 4 }}>
+                BD
+              </Avatar>
+              <span>Bytedancer</span>
+            </Dropdown>
+          </>
         }
       />
     </div>
