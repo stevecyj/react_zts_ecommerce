@@ -39,7 +39,7 @@ const AppNav = () => {
         ]}
         onSelect={(key) => console.log(key)}
         header={{
-          logo: <Icon svg={<OIcon />} />,
+          logo: <Icon style={{ color: 'var(--semi-color-text-2)'  }} svg={<OIcon />} />,
           text: 'otpyrc',
         }}
         footer={
