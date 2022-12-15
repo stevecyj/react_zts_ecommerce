@@ -1,5 +1,5 @@
 import { Layout } from '@douyinfe/semi-ui';
-import HelloButton from '@/components/HelloButton';
+import HelloButton from '@/components/Buttons/HelloButton';
 import AppNav from '@components/Navigate/AppNav';
 
 const MarketplaceLayout = () => {

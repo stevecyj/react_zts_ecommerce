@@ -7,6 +7,7 @@ import {
 } from '@douyinfe/semi-icons';
 import OIcon from '@/assets/images/o-svg.js';
 import SearchInput from '@/components/Input/Search';
+import SwitchModeButton from '../../Buttons/SwitchModeButton';
 
 const AppNav = () => {
   return (
@@ -44,6 +45,7 @@ const AppNav = () => {
         footer={
           <>
             <SearchInput></SearchInput>
+            <SwitchModeButton></SwitchModeButton>
             <Dropdown
               position='bottomRight'
               render={
