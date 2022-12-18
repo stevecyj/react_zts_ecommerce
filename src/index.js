@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Global, css } from '@emotion/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <>
+      <Global
+        styles={css`
+          .semi-navigation-horizontal
+            .semi-navigation-list
+            .semi-navigation-item-selected {
+            color: #1199fa;
+          }
+        `}
+      />
+      <App />
+    </>
   </React.StrictMode>
 );
 

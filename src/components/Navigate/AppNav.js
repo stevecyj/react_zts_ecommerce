@@ -1,40 +1,54 @@
 import { Nav, Avatar, Dropdown, Icon } from '@douyinfe/semi-ui';
-import {
-  IconStar,
-  IconUser,
-  IconSetting,
-  IconEdit,
-} from '@douyinfe/semi-icons';
+import styled from '@emotion/styled';
 import OIcon from '@/assets/images/o-svg.js';
 import SearchInput from '@/components/Navigate/SearchInput';
 import SwitchModeButton from '@/components/Navigate/SwitchModeButton';
 
+const SNav = styled(Nav)`
+  margin-bottom: 100px;
+  & li:nth-child(4) {
+    background: linear-gradient(90deg, #1199fa, #11d0fa);
+    border-radius: 4px;
+    line-height: 22px;
+    padding: 8px 24px;
+  }
+`;
+
 const AppNav = () => {
   return (
     <div style={{ width: '100%' }}>
-      <Nav
+      <SNav
         mode={'horizontal'}
         items={[
-          { itemKey: 'user', text: '用户管理', icon: <IconUser /> },
-          { itemKey: 'union', text: '活动管理', icon: <IconStar /> },
+          { itemKey: 'market', text: '市場' },
+          { itemKey: 'drop', text: 'Drop' },
           {
-            itemKey: 'approve-management',
-            text: '审批管理',
-            icon: <IconEdit />,
+            itemKey: 'brand',
+            text: '品牌',
             items: [
-              '入驻审核',
+              'AVer',
               {
                 itemKey: 'operation-management',
                 text: '运营管理',
                 items: ['人员管理', '人员变更'],
               },
+              'Phillips 86ers',
+              'Aston Martin F2',
+              'Lega Serie B',
+              'DRESSY',
+              'LIGHT METAL',
+              'LA Queens',
+              'Taichung Saint-Germain',
+              'FFC',
+              'Devil City FC',
+              'Otpycr.com',
+              'DeFi The Movie',
+              'Visa',
             ],
           },
           {
-            text: '任务平台',
-            icon: <IconSetting />,
-            itemKey: 'job',
-            items: ['任务管理', '用户任务查询'],
+            text: '創作',
+            itemKey: 'create',
           },
         ]}
         onSelect={(key) => console.log(key)}

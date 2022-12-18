@@ -4,9 +4,9 @@ import { AutoComplete } from '@douyinfe/semi-ui';
 import { IconSearch } from '@douyinfe/semi-icons';
 
 const SAutoComplete = styled(AutoComplete)`
-  width: 200px;
+  width: 350px;
   margin-right: 40px;
-  & > .semi-input-wrapper {
+  & .semi-input-wrapper {
     border-radius: 19px;
   }
 `;
@@ -38,7 +38,7 @@ const SearchInput = () => {
         showClear
         size="large"
         prefix={<IconSearch />}
-        placeholder="搜索... "
+        placeholder="搜尋"
         onSearch={handleStringSearch}
         onChange={handleChange}
       />
