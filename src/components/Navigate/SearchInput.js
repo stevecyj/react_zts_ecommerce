@@ -2,11 +2,13 @@ import { useState } from 'react';
 import styled from '@emotion/styled';
 import { AutoComplete } from '@douyinfe/semi-ui';
 import { IconSearch } from '@douyinfe/semi-icons';
-import './SearchInput.css';
 
 const SAutoComplete = styled(AutoComplete)`
   width: 200px;
   margin-right: 40px;
+  & > .semi-input-wrapper {
+    border-radius: 19px;
+  }
 `;
 
 const SearchInput = () => {
