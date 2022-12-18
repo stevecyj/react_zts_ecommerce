@@ -1,7 +1,13 @@
 import { useState } from 'react';
+import styled from '@emotion/styled';
 import { AutoComplete } from '@douyinfe/semi-ui';
 import { IconSearch } from '@douyinfe/semi-icons';
 import './SearchInput.css';
+
+const SAutoComplete = styled(AutoComplete)`
+  width: 200px;
+  margin-right: 40px;
+`;
 
 const SearchInput = () => {
   const [stringData, setStringData] = useState([]);
@@ -24,7 +30,7 @@ const SearchInput = () => {
   };
   return (
     <>
-      <AutoComplete
+      <SAutoComplete
         data={stringData}
         value={value}
         showClear
@@ -33,7 +39,6 @@ const SearchInput = () => {
         placeholder="搜索... "
         onSearch={handleStringSearch}
         onChange={handleChange}
-        style={{ width: 200, marginRight: 50 }}
       />
     </>
   );
