@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import OIcon from '@/assets/images/o-svg.js';
 import SearchInput from '@/components/Navigate/SearchInput';
 import SwitchModeButton from '@/components/Navigate/SwitchModeButton';
+import FooterList from '@/components/Navigate/FooterList';
 
 const SNav = styled(Nav)`
   margin-bottom: 100px;
@@ -11,6 +12,16 @@ const SNav = styled(Nav)`
     border-radius: 4px;
     line-height: 22px;
     padding: 8px 24px;
+  }
+  & li:nth-child(4):hover {
+    cursor: pointer;
+  }
+  & .semi-navigation-list-wrapper {
+    margin-left: 38vw;
+  }
+  & .semi-navigation-footer {
+    padding: 15px 0;
+    margin-right: 20px;
   }
 `;
 
@@ -60,11 +71,11 @@ const AppNav = () => {
             />
           ),
           text: 'otpyrc',
+          children: <SearchInput></SearchInput>,
         }}
         footer={
           <>
-            <SearchInput></SearchInput>
-            <SwitchModeButton></SwitchModeButton>
+            <FooterList />
             <Dropdown
               position="bottomRight"
               render={
@@ -77,8 +88,9 @@ const AppNav = () => {
               <Avatar size="small" color="light-blue" style={{ margin: 4 }}>
                 BD
               </Avatar>
-              <span>Bytedancer</span>
+              <span style={{ marginRight: 10 }}>Bytedancer</span>
             </Dropdown>
+            <SwitchModeButton></SwitchModeButton>
           </>
         }
       />

@@ -5,7 +5,7 @@ import { IconSearch } from '@douyinfe/semi-icons';
 
 const SAutoComplete = styled(AutoComplete)`
   width: 350px;
-  margin-right: 40px;
+  margin-left: 30px;
   & .semi-input-wrapper {
     border-radius: 19px;
   }

@@ -20,7 +20,7 @@ const SwitchModeButton = () => {
           />
         }
         theme="borderless"
-        style={{ marginRight: 10 }}
+        style={{ marginLight: 10 }}
         onClick={switchMode}
       />
     </>
