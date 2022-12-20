@@ -1,4 +1,4 @@
-import { Nav, Avatar, Dropdown, Icon } from '@douyinfe/semi-ui';
+import {Nav, Avatar, Dropdown, Icon} from '@douyinfe/semi-ui';
 import styled from '@emotion/styled';
 import OIcon from '@/assets/images/o-svg.js';
 import SearchInput from '@/components/Navigate/SearchInput';
@@ -7,18 +7,22 @@ import FooterList from '@/components/Navigate/FooterList';
 
 const SNav = styled(Nav)`
   margin-bottom: 100px;
+
   & li:nth-child(4) {
     background: linear-gradient(90deg, #1199fa, #11d0fa);
     border-radius: 4px;
     line-height: 22px;
     padding: 8px 24px;
   }
+
   & li:nth-child(4):hover {
     cursor: pointer;
   }
+
   & .semi-navigation-list-wrapper {
-    margin-left: 38vw;
+    margin-left: 10px;
   }
+
   & .semi-navigation-footer {
     padding: 15px 0;
     margin-right: 20px;
@@ -27,12 +31,12 @@ const SNav = styled(Nav)`
 
 const AppNav = () => {
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{width: '100%'}}>
       <SNav
         mode={'horizontal'}
         items={[
-          { itemKey: 'market', text: '市場' },
-          { itemKey: 'drop', text: 'Drop' },
+          {itemKey: 'market', text: '市場'},
+          {itemKey: 'drop', text: 'Drop'},
           {
             itemKey: 'brand',
             text: '品牌',
@@ -66,8 +70,8 @@ const AppNav = () => {
         header={{
           logo: (
             <Icon
-              style={{ color: 'var(--semi-color-text-2)' }}
-              svg={<OIcon />}
+              style={{color: 'var(--semi-color-text-2)'}}
+              svg={<OIcon/>}
             />
           ),
           text: 'otpyrc',
@@ -75,7 +79,7 @@ const AppNav = () => {
         }}
         footer={
           <>
-            <FooterList />
+            <FooterList/>
             <Dropdown
               position="bottomRight"
               render={
@@ -85,10 +89,10 @@ const AppNav = () => {
                 </Dropdown.Menu>
               }
             >
-              <Avatar size="small" color="light-blue" style={{ margin: 4 }}>
+              <Avatar size="small" color="light-blue" style={{margin: 4}}>
                 BD
               </Avatar>
-              <span style={{ marginRight: 10 }}>Bytedancer</span>
+              <span style={{marginRight: 10}}>Bytedancer</span>
             </Dropdown>
             <SwitchModeButton></SwitchModeButton>
           </>
