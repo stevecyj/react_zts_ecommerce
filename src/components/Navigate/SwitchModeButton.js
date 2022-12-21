@@ -1,5 +1,5 @@
-import { Button } from '@douyinfe/semi-ui';
-import { IconMoon } from '@douyinfe/semi-icons';
+import {Button} from '@douyinfe/semi-ui';
+import {IconMoon} from '@douyinfe/semi-icons';
 
 const switchMode = () => {
   const body = document.body;
@@ -16,11 +16,11 @@ const SwitchModeButton = () => {
       <Button
         icon={
           <IconMoon
-            style={{ fontSize: 35, color: 'var(--semi-color-text-2)' }}
+            style={{fontSize: 35, color: 'var(--semi-color-text-2)'}}
           />
         }
         theme="borderless"
-        style={{ marginLight: 10 }}
+        style={{marginRight: 10}}
         onClick={switchMode}
       />
     </>

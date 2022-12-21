@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Global, css } from '@emotion/react';
+import {Global, css} from '@emotion/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,14 +11,19 @@ root.render(
     <>
       <Global
         styles={css`
+          body {
+            color: var(--semi-color-text-0);
+            background-color: var(--semi-color-bg-0);
+          }
+
           .semi-navigation-horizontal
-            .semi-navigation-list
-            .semi-navigation-item-selected {
+          .semi-navigation-list
+          .semi-navigation-item-selected {
             color: #1199fa;
           }
         `}
       />
-      <App />
+      <App/>
     </>
   </React.StrictMode>
 );

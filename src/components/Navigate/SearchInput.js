@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import styled from '@emotion/styled';
-import { AutoComplete } from '@douyinfe/semi-ui';
-import { IconSearch } from '@douyinfe/semi-icons';
+import {AutoComplete} from '@douyinfe/semi-ui';
+import {IconSearch} from '@douyinfe/semi-icons';
 
 const SAutoComplete = styled(AutoComplete)`
   width: 350px;
   margin-left: 30px;
+
   & .semi-input-wrapper {
     border-radius: 19px;
   }
@@ -37,10 +38,14 @@ const SearchInput = () => {
         value={value}
         showClear
         size="large"
-        prefix={<IconSearch />}
+        prefix={<IconSearch/>}
         placeholder="搜尋"
         onSearch={handleStringSearch}
         onChange={handleChange}
+        style={{
+          color: 'var(--semi-color-text-0)',
+          backgroundColor: 'var( --semi-color-bg-0)'
+        }}
       />
     </>
   );

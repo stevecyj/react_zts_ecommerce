@@ -8,6 +8,14 @@ import FooterList from '@/components/Navigate/FooterList';
 const SNav = styled(Nav)`
   margin-bottom: 100px;
 
+  & .semi-navigation-item-text {
+    color: var(--semi-color-text-0) !important;
+  }
+
+  & ::placeholder {
+    color: var(--semi-color-text-0) !important;
+  }
+
   & li:nth-child(4) {
     background: linear-gradient(90deg, #1199fa, #11d0fa);
     border-radius: 4px;
@@ -67,10 +75,10 @@ const AppNav = () => {
           },
         ]}
         onSelect={(key) => console.log(key)}
+        style={{color: 'var(--semi-color-text-0)'}}
         header={{
           logo: (
             <Icon
-              style={{color: 'var(--semi-color-text-2)'}}
               svg={<OIcon/>}
             />
           ),
