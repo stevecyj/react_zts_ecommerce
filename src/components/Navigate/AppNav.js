@@ -1,4 +1,4 @@
-import {Nav, Avatar, Dropdown, Icon} from '@douyinfe/semi-ui';
+import {Nav, Avatar, Dropdown, Icon, Col, Row} from '@douyinfe/semi-ui';
 import styled from '@emotion/styled';
 import OIcon from '@/assets/images/o-svg.js';
 import SearchInput from '@/components/Navigate/SearchInput';
@@ -39,73 +39,79 @@ const SNav = styled(Nav)`
 
 const AppNav = () => {
   return (
-    <div style={{width: '100%'}}>
-      <SNav
-        mode={'horizontal'}
-        items={[
-          {itemKey: 'market', text: '市場'},
-          {itemKey: 'drop', text: 'Drop'},
-          {
-            itemKey: 'brand',
-            text: '品牌',
-            items: [
-              'AVer',
-              {
-                itemKey: 'operation-management',
-                text: '运营管理',
-                items: ['人员管理', '人员变更'],
-              },
-              'Phillips 86ers',
-              'Aston Martin F2',
-              'Lega Serie B',
-              'DRESSY',
-              'LIGHT METAL',
-              'LA Queens',
-              'Taichung Saint-Germain',
-              'FFC',
-              'Devil City FC',
-              'Otpycr.com',
-              'DeFi The Movie',
-              'Visa',
-            ],
-          },
-          {
-            text: '創作',
-            itemKey: 'create',
-          },
-        ]}
-        onSelect={(key) => console.log(key)}
-        style={{color: 'var(--semi-color-text-0)'}}
-        header={{
-          logo: (
-            <Icon
-              svg={<OIcon/>}
-            />
-          ),
-          text: 'otpyrc',
-          children: <SearchInput></SearchInput>,
-        }}
-        footer={
-          <>
-            <FooterList/>
-            <Dropdown
-              position="bottomRight"
-              render={
-                <Dropdown.Menu>
-                  <Dropdown.Item>详情</Dropdown.Item>
-                  <Dropdown.Item>退出</Dropdown.Item>
-                </Dropdown.Menu>
+    <div className='grid'>
+      <Row>
+        <Col lg={{span: 24}}>
+          <div style={{width: '100%'}}>
+            <SNav
+              mode={'horizontal'}
+              items={[
+                {itemKey: 'market', text: '市場'},
+                {itemKey: 'drop', text: 'Drop'},
+                {
+                  itemKey: 'brand',
+                  text: '品牌',
+                  items: [
+                    'AVer',
+                    {
+                      itemKey: 'operation-management',
+                      text: '运营管理',
+                      items: ['人员管理', '人员变更'],
+                    },
+                    'Phillips 86ers',
+                    'Aston Martin F2',
+                    'Lega Serie B',
+                    'DRESSY',
+                    'LIGHT METAL',
+                    'LA Queens',
+                    'Taichung Saint-Germain',
+                    'FFC',
+                    'Devil City FC',
+                    'Otpycr.com',
+                    'DeFi The Movie',
+                    'Visa',
+                  ],
+                },
+                {
+                  text: '創作',
+                  itemKey: 'create',
+                },
+              ]}
+              onSelect={(key) => console.log(key)}
+              style={{color: 'var(--semi-color-text-0)'}}
+              header={{
+                logo: (
+                  <Icon
+                    svg={<OIcon/>}
+                  />
+                ),
+                text: 'otpyrc',
+                children: <SearchInput></SearchInput>,
+              }}
+              footer={
+                <>
+                  <FooterList/>
+                  <Dropdown
+                    position="bottomRight"
+                    render={
+                      <Dropdown.Menu>
+                        <Dropdown.Item>详情</Dropdown.Item>
+                        <Dropdown.Item>退出</Dropdown.Item>
+                      </Dropdown.Menu>
+                    }
+                  >
+                    <Avatar size="small" color="light-blue" style={{margin: 4}}>
+                      BD
+                    </Avatar>
+                    <span style={{marginRight: 10}}>Bytedancer</span>
+                  </Dropdown>
+                  <SwitchModeButton></SwitchModeButton>
+                </>
               }
-            >
-              <Avatar size="small" color="light-blue" style={{margin: 4}}>
-                BD
-              </Avatar>
-              <span style={{marginRight: 10}}>Bytedancer</span>
-            </Dropdown>
-            <SwitchModeButton></SwitchModeButton>
-          </>
-        }
-      />
+            />
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 };
