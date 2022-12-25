@@ -1,6 +1,6 @@
 import { Layout } from '@douyinfe/semi-ui';
 import HelloButton from '@/components/Navigate/HelloButton';
-import AppNav from '@components/Navigate/AppNav';
+import AppNav from '@/components/Navigate/AppNav';
 
 const MarketplacePage = () => {
   const { Header, Footer, Sider, Content } = Layout;

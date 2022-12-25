@@ -1,4 +1,4 @@
-import {Nav, Avatar, Dropdown, Icon, Col, Row} from '@douyinfe/semi-ui';
+import { Nav, Avatar, Dropdown, Icon, Col, Row } from '@douyinfe/semi-ui';
 import styled from '@emotion/styled';
 import OIcon from '@/assets/images/o-svg.js';
 import SearchInput from '@/components/Navigate/SearchInput';
@@ -41,13 +41,13 @@ const AppNav = () => {
   return (
     <div className='grid'>
       <Row>
-        <Col lg={{span: 24}}>
-          <div style={{width: '100%'}}>
+        <Col lg={{ span: 24 }}>
+          <div style={{ width: '100%' }}>
             <SNav
               mode={'horizontal'}
               items={[
-                {itemKey: 'market', text: '市場'},
-                {itemKey: 'drop', text: 'Drop'},
+                { itemKey: 'market', text: '市場' },
+                { itemKey: 'drop', text: 'Drop' },
                 {
                   itemKey: 'brand',
                   text: '品牌',
@@ -56,7 +56,7 @@ const AppNav = () => {
                     {
                       itemKey: 'operation-management',
                       text: '运营管理',
-                      items: ['人员管理', '人员变更'],
+                      items: [ '人员管理', '人员变更' ],
                     },
                     'Phillips 86ers',
                     'Aston Martin F2',
@@ -78,7 +78,7 @@ const AppNav = () => {
                 },
               ]}
               onSelect={(key) => console.log(key)}
-              style={{color: 'var(--semi-color-text-0)'}}
+              style={{ color: 'var(--semi-color-text-0)' }}
               header={{
                 logo: (
                   <Icon
@@ -100,10 +100,10 @@ const AppNav = () => {
                       </Dropdown.Menu>
                     }
                   >
-                    <Avatar size="small" color="light-blue" style={{margin: 4}}>
+                    <Avatar size="small" color="light-blue" style={{ margin: 4 }}>
                       BD
                     </Avatar>
-                    <span style={{marginRight: 10}}>Bytedancer</span>
+                    <span style={{ marginRight: 10 }}>Bytedancer</span>
                   </Dropdown>
                   <SwitchModeButton></SwitchModeButton>
                 </>
