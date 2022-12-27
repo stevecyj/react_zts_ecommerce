@@ -1,16 +1,24 @@
 import NftPage from "@/pages/NftPage/NftPage";
 import MarketplacePage from "@/pages/MarketplacePage";
-import Root from "@/routes/root";
+import MainLayout from "@/Layouts/MainLayout";
+import ErrorPage from "@/pages/ErrorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
-  },
-  {
-    path: "/marketplace",
-    element: <MarketplacePage />,
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "nft",
+        element: <NftPage />,
+      },
+      {
+        path: "marketplace",
+        element: <MarketplacePage />,
+      },
+    ],
   },
 ]);
 
