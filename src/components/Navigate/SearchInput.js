@@ -1,7 +1,7 @@
-import {useState} from 'react';
-import styled from '@emotion/styled';
-import {AutoComplete} from '@douyinfe/semi-ui';
-import {IconSearch} from '@douyinfe/semi-icons';
+import { useState } from "react";
+import styled from "@emotion/styled";
+import { AutoComplete } from "@douyinfe/semi-ui";
+import { IconSearch } from "@douyinfe/semi-icons";
 
 const SAutoComplete = styled(AutoComplete)`
   width: 350px;
@@ -14,11 +14,11 @@ const SAutoComplete = styled(AutoComplete)`
 
 const SearchInput = () => {
   const [stringData, setStringData] = useState([]);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   const handleStringSearch = (value) => {
     let result;
     if (value) {
-      result = ['gmail.com', '163.com', 'qq.com'].map(
+      result = ["gmail.com", "163.com", "qq.com"].map(
         (domain) => `${value}@${domain}`
       );
     } else {
@@ -28,7 +28,7 @@ const SearchInput = () => {
   };
 
   const handleChange = (value) => {
-    console.log('onChange', value);
+    console.log("onChange", value);
     setValue(value);
   };
   return (
@@ -38,13 +38,13 @@ const SearchInput = () => {
         value={value}
         showClear
         size="large"
-        prefix={<IconSearch/>}
+        prefix={<IconSearch />}
         placeholder="搜尋"
         onSearch={handleStringSearch}
         onChange={handleChange}
         style={{
-          color: 'var(--semi-color-text-0)',
-          backgroundColor: 'var( --semi-color-bg-0)'
+          color: "var(--semi-color-text-0)",
+          backgroundColor: "var( --semi-color-bg-0)",
         }}
       />
     </>
