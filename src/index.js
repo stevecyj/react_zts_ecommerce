@@ -18,6 +18,12 @@ root.render(
 
           .semi-navigation-horizontal
             .semi-navigation-list
+            .semi-navigation-item {
+            color: var(--semi-color-text-0);
+          }
+
+          .semi-navigation-horizontal
+            .semi-navigation-list
             .semi-navigation-item-selected {
             color: #1199fa;
           }

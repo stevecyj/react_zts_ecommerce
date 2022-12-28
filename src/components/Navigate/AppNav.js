@@ -9,8 +9,9 @@ import FooterList from "@/components/Navigate/FooterList";
 const SNav = styled(Nav)`
   margin-bottom: 10px;
 
-  & .semi-navigation-item-text {
-    color: var(--semi-color-text-0) !important;
+  & .semi-navigation-sub-wrap .semi-navigation-sub-title,
+  .semi-navigation-item {
+    font-size: 16px;
   }
 
   & ::placeholder {
