@@ -1,12 +1,12 @@
-import { List } from '@douyinfe/semi-ui';
+import { List } from "@douyinfe/semi-ui";
 
 const FooterList = () => {
   const data = [
     {
-      title: '登入',
+      title: "登入",
     },
     {
-      title: '註冊',
+      title: "註冊",
     },
   ];
   return (
@@ -21,7 +21,7 @@ const FooterList = () => {
                 <div>
                   <span
                     style={{
-                      color: 'var(--semi-color-text-0)',
+                      color: "var(--semi-color-text-0)",
                       fontWeight: 500,
                     }}
                   >

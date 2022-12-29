@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Nav, Avatar, Dropdown, Icon, Col, Row } from "@douyinfe/semi-ui";
+import { Avatar, Col, Dropdown, Icon, Nav, Row } from "@douyinfe/semi-ui";
 import styled from "@emotion/styled";
 import OIcon from "@/assets/images/o-svg.js";
 import SearchInput from "@/components/Navigate/SearchInput";
@@ -50,6 +50,7 @@ const AppNav = () => {
                 const routerMap = {
                   marketplace: "/marketplace",
                   drop: "/drop",
+                  "phillips-86ers": "/phillips-86ers",
                 };
                 return (
                   <Link
@@ -74,7 +75,7 @@ const AppNav = () => {
                       text: "运营管理",
                       items: ["人员管理", "人员变更"],
                     },
-                    "Phillips 86ers",
+                    { itemKey: "phillips-86ers", text: "Phillips 86ers" },
                     "Aston Martin F2",
                     "Lega Serie B",
                     "DRESSY",
@@ -125,7 +126,7 @@ const AppNav = () => {
                   <SwitchModeButton></SwitchModeButton>
                 </>
               }
-            />
+            ></SNav>
           </div>
         </Col>
       </Row>

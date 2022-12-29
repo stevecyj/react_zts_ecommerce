@@ -1,4 +1,6 @@
-import NftPage from "@/pages/NftPage/NftPage";
+import NftPage from "@/pages/NftPage";
+import DropPage from "@/pages/DropPage";
+import Phillips86ersPage from "@/pages/Phillips86ersPage";
 import MarketplacePage from "@/pages/MarketplacePage";
 import MainLayout from "@/Layouts/MainLayout";
 import ErrorPage from "@/pages/ErrorPage";
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "marketplace",
         element: <MarketplacePage />,
+      },
+      {
+        path: "drop",
+        element: <DropPage />,
+      },
+      {
+        path: "phillips-86ers",
+        element: <Phillips86ersPage />,
       },
     ],
   },
