@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Avatar, Col, Dropdown, Icon, Nav, Row } from "@douyinfe/semi-ui";
+import { Avatar, Col, Dropdown, Nav, Row } from "@douyinfe/semi-ui";
 import styled from "@emotion/styled";
 import OIcon from "@/assets/images/o-svg.js";
 import SearchInput from "@/components/Navigate/SearchInput";
@@ -96,12 +96,6 @@ const AppNav = () => {
               ]}
               onSelect={(key) => console.log(key)}
               style={{ color: "var(--semi-color-text-0)" }}
-              header={{
-                logo: <Icon svg={<OIcon />} />,
-                text: "otpyrc",
-                link: "/nft",
-                children: <SearchInput></SearchInput>,
-              }}
               footer={
                 <>
                   <FooterList />
@@ -117,7 +111,7 @@ const AppNav = () => {
                     <Avatar
                       size="small"
                       color="light-blue"
-                      style={{ margin: 4 }}
+                      style={{ marginRight: 10 }}
                     >
                       BD
                     </Avatar>
@@ -126,7 +120,14 @@ const AppNav = () => {
                   <SwitchModeButton></SwitchModeButton>
                 </>
               }
-            ></SNav>
+            >
+              <Nav.Header logo={<OIcon />}>
+                <Link to={"/nft"} style={{ textDecoration: "none" }}>
+                  otpyrc
+                </Link>
+                <SearchInput></SearchInput>
+              </Nav.Header>
+            </SNav>
           </div>
         </Col>
       </Row>
